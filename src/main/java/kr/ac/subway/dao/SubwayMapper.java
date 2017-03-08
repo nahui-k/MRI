@@ -15,7 +15,8 @@ public class SubwayMapper implements RowMapper<Subway> {
 		subway.setDate(rs.getString("date"));
 		subway.setTemperature(rs.getString("temperature"));
 		subway.setHumidity(rs.getString("humidity"));
-		
+		subway.setUltrasonic(rs.getString("ultrasonic"));
+		subway.setSounds(rs.getString("sounds"));
 		return subway;
 	}
 
